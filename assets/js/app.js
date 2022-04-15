@@ -10,6 +10,7 @@ const heroSec = document.querySelector('.hero')
 const heroZombie = document.querySelector('.hero-zombie')
 const header = document.querySelector('.header')
 const zombieAudio = document.getElementById('zombie-sound')
+const zombieImage = document.getElementById('zombie-image')
 
 let valueDataAttribute = initDelete.getAttribute('data-name')
 
@@ -44,6 +45,10 @@ const deleteFunction = () => {
         header.style.backgroundColor = "#3A3535"
         titleHeader.style.color = "#F3F3F3";
         zombieAudio.play()
+
+        setTimeout(() => {
+            let newImage = zombieImage.setAttribute("src", './assets/img/zombieGroup.png')
+        }, 1400);
 
         setTimeout(() => {
             window.location.reload(); 
