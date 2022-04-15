@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Box</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" id="title-header">DeleteBox</a>
+    </header>
+
+    <section class="hero">
+      <div class="button-hero">
+        <button data-name="Delete Alert" id="initDelete">
+          <i class="fa-solid fa-circle-radiation"></i>
+          Click here to delete the world
+        </button>
+      </div>
+      <div class="box-container" id="modal">
+        <div class="box">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <div class="box-message">
+          <p>
+            Are you sure you want to <strong>delete</strong> this
+            <span id="item-name">--</span> ?
+          </p>
+        </div>
+        <div class="button-container">
+          <button class="delete">
+            <i class="fa-solid fa-trash-can"></i>
+            Delete
+          </button>
+          <button class="cancel">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+            cancel
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-zombie">
+        <div class="container">
+            <div class="image">
+                <img src="assets/img/zombie-walk.gif" alt="">
+            </div>
+        </div>
+        <audio src="/assets/audio/zombieSound.mp3" id="zombie-sound"></audio>
+    </section>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
